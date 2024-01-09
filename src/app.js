@@ -26,8 +26,8 @@ app.use(cors({
       'http://127.0.0.1:5173',
       'http://localhost',
       'http://localhost/productos',
-      'https://apiproductos-9bzd.onrender.com',
-      'https://frontend-ihqh.onrender.com'
+      'https://apiets.onrender.com',
+      'https://inventarioets.onrender.com'
     ],
     credentials: true,
   }));

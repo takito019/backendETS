@@ -1,7 +1,7 @@
 import {z} from 'zod';
 
 export const herramientasSchema = z.object({
-    numSerie: z.number({
+    numSerie: z.string({
         required_error: 'Número de serie requerido'
     }),
     tipo: z.string({

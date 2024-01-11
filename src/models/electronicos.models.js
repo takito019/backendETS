@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const electronicosSchema = new mongoose.Schema(
     {
         numSerie: {
-            type: Number,
+            type: String,
             required: true
         },
         descripcion: {

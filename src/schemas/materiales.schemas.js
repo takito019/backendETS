@@ -1,7 +1,7 @@
 import {z} from 'zod';
 
 export const materialesSchema = z.object({
-    numSerie: z.number({
+    numSerie: z.string({
         required_error: 'Número de serie requerido'
     }),
     descripcion: z.string({

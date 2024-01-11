@@ -1,7 +1,7 @@
 import {z} from 'zod';
 
 export const electronicosSchema = z.object({
-    numSerie: z.number({
+    numSerie: z.string({
         required_error: 'Número de serie requerido'
     }),
     descripcion: z.string({

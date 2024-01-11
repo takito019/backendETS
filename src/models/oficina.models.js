@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const oficinaSchema = new mongoose.Schema(
     {
         numeroserie: {
-          type: Number,
+          type: String,
           default: 0.0,
           required: true
         },

@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const herramientasSchema = new mongoose.Schema(
     {
         numSerie: {
-            type: Number,
+            type: String,
             default:0,
             required: true
         },

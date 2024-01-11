@@ -1,7 +1,7 @@
 import {z} from 'zod';
 
 export const oficinaSchema = z.object({ 
-    numeroserie: z.number({
+    numeroserie: z.string({
         required_error: 'Número de serie requerido'
     }),
     tipo: z.string({

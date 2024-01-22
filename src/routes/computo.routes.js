@@ -30,4 +30,8 @@ router.delete('/computo/:id', authRequired, deleteComputo);
 //Actualizar un producto
 router.put('/computo/:id', authRequired, editComputo);
 
+// router.get('/computo/search',isAuthenticated,(req,res) =>{
+//   res.render('computo/buscar-computo');
+// });//Fin de get computo
+
 export default router;

@@ -20,5 +20,9 @@ router.post('/login', validateSchema (loginSchema) ,login);
 router.post('/logout',logout);
 router.get('/profile',authRequired,profile);
 
+router.get('/computo/search',isAuthenticated,(req,res) =>{
+    res.render('computo/buscar-computo');
+});//Fin de get computo
+
 
 export default router;

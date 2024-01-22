@@ -2,17 +2,16 @@ import mongoose from "mongoose";
 
 const oficinaSchema = new mongoose.Schema(
     {
-        numeroserie: {
-          type: String,
-          default: 0.0,
-          required: true
-        },
-        tipo: {
-            type: String, 
+        numSerie: {
+            type: String,
             required: true
         },
-        proveedor: {
+        tipo: {
             type: String,
+            required:true
+        },        
+        proveedor:{
+            type:String,
             required: true
         },
         descripcion: {
@@ -20,21 +19,20 @@ const oficinaSchema = new mongoose.Schema(
             required: true
         },
         estatus:{
-            type: String,
-            required: true,
+            type:String,
+            required: true, 
             default: "Activo"
         },
-        cantidad: {
-            type: Number,
-            default: 1,
+        cantidad:{
+            type:Number,
+            default: 1
+        },
+        responsable:{
+            type:String,
             required: true
         },
-        responsable: {
-            type: String,
-            required: true
-        },
-        ubicacion: {
-            type: String,
+        ubicacion:{
+            type:String,
             required: true
         },
         user: {
@@ -42,9 +40,9 @@ const oficinaSchema = new mongoose.Schema(
             ref: 'User',
             required:true
         }
-    },{
+    },  {
         timestamps: true
     }
-); //fin de mobescolarSchema
+); //fin de oficinaSchema
 
-export default mongoose.model('Oficina', oficinaSchema);
+export default mongoose.model( 'Oficina', oficinaSchema);
